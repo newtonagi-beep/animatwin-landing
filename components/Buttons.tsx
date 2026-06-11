@@ -20,7 +20,7 @@ export function BtnLink({
   }[variant];
   return (
     <Link href={href} className={`${cls} ${className}`}>
-      <span className="lbl" data-text={children}>
+      <span className="lbl">
         {children}
       </span>
     </Link>
