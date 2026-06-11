@@ -1,6 +1,7 @@
 import { testimonials } from "@/lib/data";
 import { Eyebrow } from "./Buttons";
 import { Reveal } from "./Reveal";
+import AutoRail from "./AutoRail";
 
 export default function Testimonials() {
   return (
@@ -11,29 +12,36 @@ export default function Testimonials() {
           <h2 className="text-4xl font-extrabold md:text-6xl">Posłuchaj właścicieli</h2>
         </Reveal>
       </div>
-      <div className="container-j mt-12">
-        <div className="rail -mx-5 px-5 md:-mx-10 md:px-10">
-          {testimonials.map((t, i) => (
-            <Reveal key={t.name} delay={Math.min(i * 0.06, 0.25)} className="shrink-0">
-              <figure className="flex h-full w-[84vw] max-w-md flex-col rounded-card bg-white p-8 shadow-sm">
-                <span className="font-display text-4xl text-brand">“</span>
-                <blockquote className="mt-2 text-lg font-medium leading-relaxed">
-                  {t.quote}
-                </blockquote>
-                <figcaption className="mt-auto flex items-center gap-3 pt-7">
-                  <span className="grid h-11 w-11 place-items-center rounded-full bg-brand-soft font-display font-bold text-brand">
-                    {t.name[0]}
-                  </span>
-                  <span>
-                    <span className="block font-display font-bold">{t.name}</span>
-                    <span className="block text-sm text-ink/50">{t.pet}</span>
-                  </span>
-                </figcaption>
-              </figure>
-            </Reveal>
+      <Reveal className="mt-12">
+        <AutoRail speed={0.45} className="px-5 md:px-10">
+          {testimonials.map((t) => (
+            <figure
+              key={t.name}
+              className="flex w-[84vw] max-w-md shrink-0 flex-col rounded-card bg-white p-8 shadow-sm"
+            >
+              <span className="font-display text-4xl leading-none text-brand">“</span>
+              <blockquote className="mt-2 text-lg font-medium leading-relaxed">
+                {t.quote}
+              </blockquote>
+              <figcaption className="mt-auto flex items-center gap-3 pt-7">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={t.img}
+                  alt={`Zdjęcie: ${t.name}`}
+                  width={48}
+                  height={48}
+                  loading="lazy"
+                  className="h-12 w-12 rounded-full object-cover ring-2 ring-brand-soft"
+                />
+                <span>
+                  <span className="block font-display font-bold">{t.name}</span>
+                  <span className="block text-sm text-ink/50">{t.pet}</span>
+                </span>
+              </figcaption>
+            </figure>
           ))}
-        </div>
-      </div>
+        </AutoRail>
+      </Reveal>
     </section>
   );
 }

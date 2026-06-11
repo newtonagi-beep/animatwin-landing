@@ -40,7 +40,7 @@ export default function Navbar() {
             AnimaTwin
           </Link>
 
-          <nav className="hidden items-center gap-8 md:flex">
+          <nav className="hidden items-center gap-9 md:flex">
             {links.map((l) => (
               <Link
                 key={l.href}
@@ -54,7 +54,7 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="hidden items-center gap-3 md:flex">
+          <div className="ml-8 hidden items-center gap-4 md:flex">
             <BtnLink href="/contact" variant="outline" className="!py-2.5 text-sm">
               Zaloguj się
             </BtnLink>

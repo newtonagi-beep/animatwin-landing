@@ -21,16 +21,15 @@ h1, h2, h3, h4 {
 
 .container-j { @apply mx-auto w-full max-w-[1400px] px-5 md:px-10; }
 
-/* Jeton-style button */
+/* Jeton-style button: zduplikowana etykieta przesuwa się w górę na hover */
 .btn-j {
   @apply relative inline-flex items-center justify-center overflow-hidden rounded-full px-7 py-3.5 font-display text-base font-semibold transition-[transform,background-color] duration-300;
-  isolation: isolate;
 }
 .btn-j:active { transform: scale(0.97); }
 .btn-j .lbl {
   @apply relative block;
 }
-.btn-j:hover .lbl { /* no slide effect — cleaner without duplicate text */ }
+.btn-j:hover .lbl { /* no slide effect */ }
 
 .btn-primary { @apply btn-j bg-brand text-white hover:bg-brand-dark; }
 .btn-dark { @apply btn-j bg-ink text-white; }

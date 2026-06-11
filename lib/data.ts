@@ -1,7 +1,7 @@
 export const stats = [
-  { value: "197", label: "karm w bazie Food Finder" },
-  { value: "354", label: "rasy w encyklopedii" },
-  { value: "7 248", label: "klinik weterynaryjnych" },
+  { value: "+195", label: "karm w bazie Food Finder" },
+  { value: "+350", label: "ras w encyklopedii" },
+  { value: "+7 tys.", label: "klinik weterynaryjnych" },
   { value: "12", label: "narządów na Health Map 3D" }
 ];
 
@@ -19,7 +19,7 @@ export const problems = [
   {
     title: "Trudność w doborze karmy",
     pain: "Setki marek, składów i porcji — jak wybrać?",
-    fix: "Food Finder: baza 197 rzeczywistych karm, porównywarka i kalkulator dziennej porcji."
+    fix: "Food Finder: baza +195 rzeczywistych karm, porównywarka i kalkulator dziennej porcji."
   },
   {
     title: "Zagubienie w harmonogramie",
@@ -29,7 +29,7 @@ export const problems = [
   {
     title: "Brak wiedzy o predyspozycjach rasowych",
     pain: "Każda rasa ma typowe choroby, ale nikt ich nie zbiera w jednym miejscu.",
-    fix: "Encyklopedia 354 ras z badge'ami ostrzegającymi o typowych problemach zdrowotnych."
+    fix: "Encyklopedia +350 ras z badge'ami ostrzegającymi o typowych problemach zdrowotnych."
   },
   {
     title: "Brak danych dla weterynarza",
@@ -57,7 +57,7 @@ export const features = [
   {
     icon: "🧬",
     name: "Health Map 3D",
-    short: "Interaktywny model anatomiczny psa (Three.js).",
+    short: "Interaktywny model anatomiczny psa.",
     points: [
       "12 narządów: serce, płuca, nerki, wątroba, żołądek, jelita, pęcherz, mózg, oczy, uszy, stawy, skóra",
       "Kolorowanie wg historii: zielony / żółty / czerwony",
@@ -71,7 +71,7 @@ export const features = [
     name: "Food Finder",
     short: "Wybór karmy bez domysłów — same dane.",
     points: [
-      "Baza 197 karm, 12 marek — rzeczywiste dane",
+      "Baza +195 karm i kilkunastu marek — rzeczywiste dane",
       "Makroskładniki: białko, tłuszcz, błonnik, węglowodany",
       "Witaminy i minerały parsowane z dodatków",
       "Filtry i dual range slidery",
@@ -82,7 +82,7 @@ export const features = [
   {
     icon: "📚",
     name: "Encyklopedia Ras",
-    short: "354 rasy, 22 pola danych każda.",
+    short: "+350 ras, 22 pola danych każda.",
     points: [
       "Wzrost, waga, długość życia, grupa FCI, charakter, energia",
       "Wyszukiwarka full-text",
@@ -94,12 +94,12 @@ export const features = [
   {
     icon: "📍",
     name: "Wyszukiwarka Klinik",
-    short: "Największa baza klinik weterynaryjnych w Polsce.",
+    short: "Jedna z największych baz klinik w Polsce.",
     points: [
-      "7 248 placówek z Krajowej Izby Lekarsko-Weterynaryjnej",
+      "+7 tys. placówek w całej Polsce",
       "Filtry: województwo, typ placówki, 24/7, paszporty",
       "Karty z kontaktem, listą lekarzy i godzinami przyjęć",
-      "Paginacja 20 placówek na stronę"
+      "Wygodna paginacja wyników"
     ]
   },
   {
@@ -110,16 +110,6 @@ export const features = [
       "Chat ze streamingiem odpowiedzi w czasie rzeczywistym",
       "Kontekst profilu: rasa, wiek, waga, historia medyczna",
       "Smart Command Bar — szybki dostęp z każdego miejsca"
-    ]
-  },
-  {
-    icon: "🎨",
-    name: "Design System",
-    short: "Dostosuj wygląd aplikacji do siebie.",
-    points: [
-      "Theme Editor — live customization kolorów",
-      "Sidebar Editor — drag-and-drop układu menu",
-      "Miniaturki zwierząt z rozwijanym subnav"
     ]
   },
   {
@@ -144,51 +134,61 @@ export const steps = [
 export const plans = [
   {
     name: "Free",
-    price: "0 zł",
-    period: "na zawsze",
+    priceM: 0,
     featured: false,
     items: ["1 zwierzę", "Podstawowy dashboard", "Encyklopedia ras", "Powiadomienia push"]
   },
   {
     name: "Standard",
-    price: "19 zł",
-    period: "miesięcznie",
+    priceM: 19,
     featured: true,
     items: ["Do 3 zwierząt", "Pełny Medical Hub", "Food Finder", "AI Asystent (limit)", "Eksport PDF"]
   },
   {
     name: "Premium",
-    price: "39 zł",
-    period: "miesięcznie",
+    priceM: 39,
     featured: false,
     items: ["Bez limitu zwierząt", "Wszystko ze Standard", "Health Map 3D", "AI Asystent bez limitu", "Priorytetowe wsparcie"]
   }
 ];
+
+export const ANNUAL_DISCOUNT = 0.3;
 
 export const testimonials = [
   {
     quote:
       "Wreszcie cała historia Bruna w jednym miejscu. Weterynarz zeskanował QR i od razu wiedział wszystko o szczepieniach.",
     name: "Marta K.",
-    pet: "właścicielka labradora"
+    pet: "właścicielka labradora",
+    img: "https://randomuser.me/api/portraits/women/65.jpg"
   },
   {
     quote:
       "Health Map pokazała żółty kolor przy stawach. Pojechaliśmy na kontrolę — wcześnie wykryta dysplazja. Bezcenne.",
     name: "Tomasz W.",
-    pet: "właściciel owczarka niemieckiego"
+    pet: "właściciel owczarka niemieckiego",
+    img: "https://randomuser.me/api/portraits/men/32.jpg"
   },
   {
     quote:
       "Kalkulator porcji w Food Finderze skończył nasze domysły. Pies schudł 2 kg i ma więcej energii.",
     name: "Agnieszka P.",
-    pet: "właścicielka beagle'a"
+    pet: "właścicielka beagle'a",
+    img: "https://randomuser.me/api/portraits/women/44.jpg"
   },
   {
     quote:
       "Mam trzy koty i psa. Bez AnimaTwin nie ogarnęłabym terminów odrobaczania. Teraz aplikacja pilnuje wszystkiego.",
     name: "Karolina Z.",
-    pet: "właścicielka czterech zwierząt"
+    pet: "właścicielka czterech zwierząt",
+    img: "https://randomuser.me/api/portraits/women/68.jpg"
+  },
+  {
+    quote:
+      "Przy adopcji drugiego psa quiz doboru rasy trafił idealnie. A OCR wczytał całą papierową kartę w minutę.",
+    name: "Michał D.",
+    pet: "właściciel dwóch psów",
+    img: "https://randomuser.me/api/portraits/men/41.jpg"
   }
 ];
 
@@ -211,7 +211,11 @@ export const faqs = [
   },
   {
     q: "Skąd pochodzą dane o klinikach i karmach?",
-    a: "Kliniki: 7 248 placówek z Krajowej Izby Lekarsko-Weterynaryjnej (wetsystems.org.pl). Karmy: 197 rzeczywistych produktów 12 marek z pełnym składem. Rasy: 354 pozycje po 22 pola danych."
+    a: "Kliniki: ponad 7 tys. zweryfikowanych placówek z całej Polski. Karmy: ponad 195 rzeczywistych produktów z pełnym składem. Rasy: ponad 350 pozycji po 22 pola danych."
+  },
+  {
+    q: "Czy opłaca się płatność roczna?",
+    a: "Tak — przy rozliczeniu rocznym ceny są o 30% niższe niż w rozliczeniu miesięcznym. Plan możesz zmienić w dowolnym momencie, a rozliczenie jest proporcjonalne."
   },
   {
     q: "Czy mogę zmienić plan w dowolnym momencie?",

@@ -15,7 +15,7 @@ const body = Inter({ subsets: ["latin", "latin-ext"], variable: "--font-body" })
 export const metadata: Metadata = {
   title: "AnimaTwin — Cyfrowy strażnik zdrowia Twojego psa",
   description:
-    "Pet Digital Twin & AI Guardian. Pełna historia medyczna, Health Map 3D, Food Finder, 7 248 klinik weterynaryjnych. Jedna aplikacja.",
+    "Pet Digital Twin & AI Guardian. Pełna historia medyczna, Health Map 3D, Food Finder i ponad 7 tys. klinik weterynaryjnych. Jedna aplikacja.",
   openGraph: {
     title: "AnimaTwin — Pet Digital Twin & AI Guardian",
     description: "Wirtualna kopia zdrowia Twojego zwierzaka, która ewoluuje razem z nim.",

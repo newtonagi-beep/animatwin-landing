@@ -7,7 +7,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Funkcje — AnimaTwin",
   description:
-    "Medical Hub, Health Map 3D, Food Finder, Encyklopedia 354 ras, 7 248 klinik, AI Asystent — wszystkie funkcje AnimaTwin."
+    "Medical Hub, Health Map 3D, Food Finder, encyklopedia +350 ras, +7 tys. klinik, AI Asystent — wszystkie funkcje AnimaTwin."
 };
 
 export default function FeaturesPage() {

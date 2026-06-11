@@ -1,8 +1,8 @@
 export default function Marquee() {
   const items = [
-    "197 karm",
-    "354 rasy",
-    "7 248 klinik",
+    "+195 karm",
+    "+350 ras",
+    "+7 tys. klinik",
     "Health Map 3D",
     "AI Asystent",
     "QR dla weterynarza",

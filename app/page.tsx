@@ -5,6 +5,7 @@ import Steps from "@/components/Steps";
 import FeatureCards from "@/components/FeatureCards";
 import HealthMapShowcase from "@/components/HealthMapShowcase";
 import VetSection from "@/components/VetSection";
+import AppShowcase from "@/components/AppShowcase";
 import Stats from "@/components/Stats";
 import Testimonials from "@/components/Testimonials";
 import PricingCards from "@/components/PricingCards";
@@ -23,6 +24,7 @@ export default function Home() {
       <FeatureCards />
       <HealthMapShowcase />
       <VetSection />
+      <AppShowcase />
       <Stats />
       <Testimonials />
       <section className="py-24 md:py-32">
